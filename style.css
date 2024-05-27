@@ -45,6 +45,9 @@ h1{
  .pages ul li a{
      display: inline-block;
      padding: 8px 16px;
+     margin: 0 5px;
+     border: 1px solid rgb( 38, 31, 31);
+     border-radius: 7px;
      background-color: rgb(194, 240, 225);
      text-decoration: none;
  }
