@@ -1,0 +1,225 @@
+{
+  "questions": [
+    {
+      "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+      "options": {
+        "A": "script name='script.js'",
+        "B": "script src='script.js'",
+        "C": "script href='script.js'",
+        "D": "script ref='script.js'"
+      },
+      "correct": "B",
+      "id": "1f42"
+    },
+    {
+      "question": "How do you write 'Hello World' in an alert box?",
+      "options": {
+        "A": "msg('Hello World');",
+        "B": "alertBox('Hello World');",
+        "C": "alert('Hello World');",
+        "D": "msgBox('Hello World');"
+      },
+      "correct": "C",
+      "id": "1660"
+    },
+    {
+      "question": "Which of the following is not a reserved word in JavaScript?",
+      "options": {
+        "A": "interface",
+        "B": "throws",
+        "C": "program",
+        "D": "short"
+      },
+      "correct": "C",
+      "id": "9252"
+    },
+    {
+      "question": "What is the correct way to write a JavaScript array?",
+      "options": {
+        "A": "var colors = (1:'red', 2:'green', 3:'blue')",
+        "B": "var colors = 'red', 'green', 'blue'",
+        "C": "var colors = ['red', 'green', 'blue']",
+        "D": "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+      },
+      "correct": "C",
+      "id": "439e"
+    },
+    {
+      "question": "Which event occurs when the user clicks on an HTML element?",
+      "options": {
+        "A": "onchange",
+        "B": "onclick",
+        "C": "onmouseclick",
+        "D": "onmouseover"
+      },
+      "correct": "B",
+      "id": "cb97"
+    },
+    {
+      "question": "How do you declare a JavaScript variable?",
+      "options": {
+        "A": "variable carName;",
+        "B": "var carName;",
+        "C": "v carName;",
+        "D": "string carName;"
+      },
+      "correct": "B",
+      "id": "b579"
+    },
+    {
+      "question": "What is the correct JavaScript syntax to change the content of the HTML element below?",
+      "code": "<p id='demo'>This is a demonstration.</p>",
+      "options": {
+        "A": "document.getElementById('demo').innerHTML = 'Hello World!';",
+        "B": "document.getElementByName('demo').innerHTML = 'Hello World!';",
+        "C": "document.getElementByTagName('p').innerHTML = 'Hello World!';",
+        "D": "document.getElement('p').innerHTML = 'Hello World!';"
+      },
+      "correct": "A",
+      "id": "7c58"
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "options": {
+        "A": "function myFunction()",
+        "B": "function:myFunction()",
+        "C": "function = myFunction()",
+        "D": "function => myFunction()"
+      },
+      "correct": "A",
+      "id": "f3b4"
+    },
+    {
+      "question": "How do you call a function named 'myFunction'?",
+      "options": {
+        "A": "call myFunction()",
+        "B": "call function myFunction()",
+        "C": "myFunction()",
+        "D": "Call.myFunction()"
+      },
+      "correct": "C",
+      "id": "a0da"
+    },
+    {
+      "question": "How can you add a comment in JavaScript?",
+      "options": {
+        "A": "'This is a comment",
+        "B": "<!--This is a comment-->",
+        "C": "//This is a comment",
+        "D": "*This is a comment*"
+      },
+      "correct": "C",
+      "id": "508d"
+    },
+    {
+      "question": "What will the following code return: Boolean(10 > 9)?",
+      "options": {
+        "A": "false",
+        "B": "true",
+        "C": "NaN",
+        "D": "undefined"
+      },
+      "correct": "B",
+      "id": "80cd"
+    },
+    {
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": {
+        "A": "*",
+        "B": "x",
+        "C": "=",
+        "D": "-"
+      },
+      "correct": "C",
+      "id": "bef8"
+    },
+    {
+      "question": "What is the correct JavaScript syntax to write 'Hello World'?",
+      "options": {
+        "A": "('Hello World')",
+        "B": "document.write('Hello World')",
+        "C": "response.write('Hello World')",
+        "D": "('Hello World').document.write"
+      },
+      "correct": "B",
+      "id": "09dd"
+    },
+    {
+      "question": "Which method can be used to find the length of a string?",
+      "options": {
+        "A": "length()",
+        "B": "getLength()",
+        "C": "strlen()",
+        "D": "length"
+      },
+      "correct": "D",
+      "id": "4c0e"
+    },
+    {
+      "question": "Which built-in method sorts the elements of an array?",
+      "options": {
+        "A": "changeOrder(order)",
+        "B": "order()",
+        "C": "sort()",
+        "D": "arrange()"
+      },
+      "correct": "C",
+      "id": "9c0c"
+    },
+    {
+      "question": "Which of the following is a way to create an object in JavaScript?",
+      "options": {
+        "A": "var obj = {};",
+        "B": "var obj = ();",
+        "C": "var obj = [];",
+        "D": "var obj = <>;"
+      },
+      "correct": "A",
+      "id": "524b"
+    },
+    {
+      "question": "How do you round the number 7.25 to the nearest integer?",
+      "options": {
+        "A": "Math.rnd(7.25)",
+        "B": "Math.round(7.25)",
+        "C": "rnd(7.25)",
+        "D": "round(7.25)"
+      },
+      "correct": "B",
+      "id": "21e5"
+    },
+    {
+      "question": "How can you detect the client’s browser name?",
+      "options": {
+        "A": "navigator.appName",
+        "B": "browser.name",
+        "C": "client.navName",
+        "D": "window.browser"
+      },
+      "correct": "A",
+      "id": "1298"
+    },
+    {
+      "question": "Which JavaScript method is used to access an HTML element by id?",
+      "options": {
+        "A": "getElementById()",
+        "B": "getElement(id)",
+        "C": "getElementByID()",
+        "D": "getIdElement()"
+      },
+      "correct": "A",
+      "id": "be81"
+    },
+    {
+      "id": "97a6",
+      "question": "ask",
+      "options": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct": "a"
+    }
+  ]
+}

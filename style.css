@@ -1,0 +1,33 @@
+
+
+h1{
+ text-align: center;
+ font-size: 48px;
+ color: rgb(17, 99, 99);
+}
+ button{
+     background-color: rgb(62, 166, 239);
+     color: rgb(255, 255, 255);
+     border: 1px solid rgb(255, 255, 255);
+     border-radius: 15px;
+     padding: 16px;
+     cursor: pointer;
+     width: 250px;
+ }
+ button:hover{
+     background-color: rgb(255, 255, 255);
+     color: rgb(38, 37, 37);
+      border: 1px solid rgb(49, 49, 49);
+ }
+ #product div {
+     text-align: center;
+     border: 1px solid  rgb(38, 31, 31); 
+     border-radius: 15px;
+     padding: 22px;
+     width: 600px;
+     margin: auto;
+ }
+ #product i
+ {
+     font-size: 15px;            
+ }
