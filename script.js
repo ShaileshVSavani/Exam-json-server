@@ -6,22 +6,22 @@ const UiMaker = (data)=> {
   
     let option_a = document.createElement("button");
     option_a.innerHTML = ele.options.A
-  
-  
+    option_a.setAttribute('data-option', 'A');
   
     let option_b = document.createElement("button");
     option_b.innerHTML = ele.options.B
+    option_b.setAttribute('data-option', 'B');
   
     let option_c = document.createElement("button");
     option_c.innerHTML = ele.options.C
+    option_c.setAttribute('data-option', 'C');
   
   
     let option_d = document.createElement("button");
     option_d.innerHTML = ele.options.D
+    option_d.setAttribute('data-option', 'D');
   
-    let answer = document.createElement("button");
-    answer.innerHTML = ele.correct
-    
+   
     
     let div = document.createElement("div");
     div.append(question, option_a, option_b, option_c, option_d)
@@ -33,31 +33,24 @@ const UiMaker = (data)=> {
       option_b.addEventListener("click",showcorrectAnswer);
       option_c.addEventListener("click",showcorrectAnswer);
       option_d.addEventListener("click",showcorrectAnswer);
-      answer.addEventListener("click",showcorrectAnswer);
-      function showcorrectAnswer() {
-        if (ele.correct === "A") {
-          option_a.style.backgroundColor = "green";
-        } else if (ele.correct === "B") {
-          option_b.style.backgroundColor = "green";
-        } else if (ele.correct === "C") {
-          option_c.style.backgroundColor = "green";
-        } else if (ele.correct === "D") {
-          option_d.style.backgroundColor = "green";
-        }
-        else {
-          option_a.style.backgroundColor = "red";
-          option_b.style.backgroundColor = "red";
-          option_c.style.backgroundColor = "red";
-          option_d.style.backgroundColor = "red";
-        }
-      }
+    
+    
+    function showcorrectAnswer(event) {
+            const selectedOption = event.target.getAttribute('data-option');
+            if (selectedOption === ele.correct) {
+              event.target.style.backgroundColor = "green";
+            } else {
+              event.target.style.backgroundColor = "red";
+            }
+       }
   });
 
 }
 const getData =() => {
   fetch("http://localhost:3000/questions")
    .then(res => res.json())
-   .then(data => UiMaker(data))
+    .then(data => UiMaker(data))
+   .catch(err => console.error("Error fetching data:", err));
 };
 
 getData()
@@ -65,14 +58,14 @@ getData()
 
 const QuestionHandler = (e) => {
   e.preventDefault();
-  let question = document.getElementById("question").value;
+  let que = document.getElementById("question").value;
   let option_a = document.getElementById("option_a").value;
   let option_b = document.getElementById("option_b").value;
   let option_c = document.getElementById("option_c").value;
   let option_d = document.getElementById("option_d").value;
   let answer = document.getElementById("answer").value;
   let obj = {
-    question: question,
+    question: que,
     options: {
       A: option_a,
       B: option_b,
@@ -88,6 +81,14 @@ const QuestionHandler = (e) => {
       },
       body: JSON.stringify(obj)
     })
+    .then(res => res.json())
+      .then(data => {
+        console.log("Question added:", data);
+        getData();  
+      })
+      .catch(err => console.error("Error adding question:", err));
+      
+      document.getElementById("formData").reset();
   }
 
 document.getElementById("formData").addEventListener("submit", QuestionHandler)

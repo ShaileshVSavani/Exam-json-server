@@ -1,8 +1,15 @@
+body{
+    /* background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 
+}
 
 h1{
  text-align: center;
- font-size: 48px;
+ font-size: 40px;
  color: rgb(17, 99, 99);
 }
  button{
@@ -13,6 +20,7 @@ h1{
      padding: 16px;
      cursor: pointer;
      width: 250px;
+     transition: all 0.5s;
  }
  button:hover{
      background-color: rgb(255, 255, 255);
@@ -22,12 +30,55 @@ h1{
  #product div {
      text-align: center;
      border: 1px solid  rgb(38, 31, 31); 
-     border-radius: 15px;
+     border-radius: 25px;
      padding: 22px;
      width: 600px;
      margin: auto;
  }
- #product i
- {
-     font-size: 15px;            
+
+ .pages ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style-type: none;
  }
+ .pages ul li a{
+     display: inline-block;
+     padding: 8px 16px;
+     background-color: rgb(194, 240, 225);
+     text-decoration: none;
+ }
+ .textarea{
+    width: 400px; 
+}
+.formContainer{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+input {
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.btn{
+    
+   /* display: inline-block; */
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 5px;
+  
